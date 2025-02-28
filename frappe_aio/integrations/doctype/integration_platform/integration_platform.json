@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:platform_name",
+ "creation": "2023-06-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "platform_name",
+  "platform_type",
+  "is_enabled",
+  "section_break_4",
+  "app_id",
+  "app_secret",
+  "section_break_7",
+  "access_token",
+  "token_expiry",
+  "refresh_token",
+  "section_break_11",
+  "webhook_url",
+  "verification_token",
+  "encryption_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "platform_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "平台名称",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "platform_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "平台类型",
+   "options": "飞书\n企业微信\n钉钉",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_enabled",
+   "fieldtype": "Check",
+   "label": "启用"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "应用凭证"
+  },
+  {
+   "fieldname": "app_id",
+   "fieldtype": "Data",
+   "label": "App ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "app_secret",
+   "fieldtype": "Password",
+   "label": "App Secret",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "访问令牌"
+  },
+  {
+   "fieldname": "access_token",
+   "fieldtype": "Data",
+   "label": "Access Token",
+   "read_only": 1
+  },
+  {
+   "fieldname": "token_expiry",
+   "fieldtype": "Datetime",
+   "label": "Token 过期时间",
+   "read_only": 1
+  },
+  {
+   "fieldname": "refresh_token",
+   "fieldtype": "Data",
+   "label": "Refresh Token",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break",
+   "label": "事件订阅"
+  },
+  {
+   "fieldname": "webhook_url",
+   "fieldtype": "Data",
+   "label": "Webhook URL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "verification_token",
+   "fieldtype": "Data",
+   "label": "验证 Token"
+  },
+  {
+   "fieldname": "encryption_key",
+   "fieldtype": "Password",
+   "label": "加密密钥"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Frappe Aio",
+ "name": "Integration Platform",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -109,49 +109,11 @@ app_license = "mit"
 
 # before_app_uninstall = "frappe_aio.utils.before_app_uninstall"
 # after_app_uninstall = "frappe_aio.utils.after_app_uninstall"
-
-# Desk Notifications
-# ------------------
-# See frappe.core.notifications.get_notification_config
-
-# notification_config = "frappe_aio.notifications.get_notification_config"
-
-# Permissions
-# -----------
-# Permissions evaluated in scripted ways
-
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
-#
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
-
-# DocType Class
-# ---------------
-# Override standard doctype classes
-
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
-
-# Document Events
-# ---------------
-# Hook on document methods and events
-
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
-
-# Scheduled Tasks
-# ---------------
-
-# scheduler_events = {
+# 在现有的 hooks.py 文件中添加以下内容
+# 网站页面
+website_route_rules = [
+    {"from_route": "/feishu-dashboard", "to_route": "integrations/feishu/pages/feishu_dashboard"},
+]
 # 	"all": [
 # 		"frappe_aio.tasks.all"
 # 	],

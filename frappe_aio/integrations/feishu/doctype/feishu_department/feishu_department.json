@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:department_id",
+ "creation": "2023-06-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_id",
+  "name",
+  "parent_department_id",
+  "leader_user_id",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "部门 ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "部门名称"
+  },
+  {
+   "fieldname": "parent_department_id",
+   "fieldtype": "Data",
+   "label": "父部门 ID"
+  },
+  {
+   "fieldname": "leader_user_id",
+   "fieldtype": "Data",
+   "label": "部门主管 ID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "状态",
+   "options": "Active\nDeleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Frappe Aio",
+ "name": "Feishu Department",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
