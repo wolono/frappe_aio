@@ -109,10 +109,10 @@ app_license = "mit"
 
 # before_app_uninstall = "frappe_aio.utils.before_app_uninstall"
 # after_app_uninstall = "frappe_aio.utils.after_app_uninstall"
-# 在现有的 hooks.py 文件中添加以下内容
-# 网站页面
+# 在现有的 hooks.py 文件中添加或修改以下内容
+# 网站路由
 website_route_rules = [
-    {"from_route": "/feishu-dashboard", "to_route": "integrations/feishu/pages/feishu_dashboard"},
+    {"from_route": "/feishu-dashboard", "to_route": "feishu_dashboard"},
 ]
 # 	"all": [
 # 		"frappe_aio.tasks.all"
